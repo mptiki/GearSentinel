@@ -1,0 +1,25 @@
+from urllib import request
+from HTMLParser import *
+
+class HTMLStacked(HTMLParser):
+    tagStack = []
+    classStack = []
+    
+    def __init__(self):
+        super(HTMLStacked, self).__init__
+    
+    def handle_starttag(self, tag, attrs):
+        tagStack.append()
+        
+        
+    def handle_endtag(self, tag):
+        print "Encountered an end tag :", tag
+        
+        
+    def handle_data(self, data):
+        print "Encountered some data  :", data
+        
+#    def getID(self, data):
+
+testy = HTMLStacked()
+        
